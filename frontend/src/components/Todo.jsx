@@ -31,7 +31,7 @@ const Todo = () => {
 
   const fetchTasks = async () => {
     try {
-      const response = await axios.get('https://todo-ten-xi-60.vercel.app/api/tasks', {
+      const response = await axios.get('https://todo-five-sage.vercel.app/api/tasks', {
         headers: {
           Authorization: token,
         },
@@ -45,7 +45,7 @@ const Todo = () => {
   const handleAddTask = async () => {
     try {
       await axios.post(
-        'https://todo-ten-xi-60.vercel.app/api/tasks',
+        'https://todo-five-sage.vercel.app/api/tasks',
         { title, description, dueDate },
         {
           headers: {
@@ -65,7 +65,7 @@ const Todo = () => {
   const handleEditTask = async (id, newData) => {
     try {
       await axios.put(
-        `https://todo-ten-xi-60.vercel.app/api/tasks/${id}`,
+        `https://todo-five-sage.vercel.app/api/tasks/${id}`,
         newData,
         {
           headers: {
@@ -82,7 +82,7 @@ const Todo = () => {
   const handleDeleteTask = async (id) => {
     try {
       await axios.delete(
-        `https://todo-ten-xi-60.vercel.app/api/tasks/${id}`,
+        `https://todo-five-sage.vercel.app/api/tasks/${id}`,
         {
           headers: {
             Authorization: token,
