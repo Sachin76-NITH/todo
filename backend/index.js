@@ -10,7 +10,11 @@ const app = express();
 
 // Middleware setup
 app.use(bodyParser.json());
-app.use(cors());
+app.use(cors({
+  origin: 'https://todo-dssi-ky6pfdmpy-sachin76niths-projects.vercel.app/', // replace with your frontend domain
+  methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
+  credentials: true, // Allow credentials if needed
+}));
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
