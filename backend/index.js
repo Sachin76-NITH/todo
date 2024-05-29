@@ -11,7 +11,7 @@ const app = express();
 // Middleware setup
 app.use(bodyParser.json());
 app.use(cors({
-  origin: 'https://todo-ajub.vercel.app', // replace with your frontend domain
+  origin: 'https://todo-ep7f.vercel.app', // replace with your frontend domain
   methods: 'GET,HEAD,PUT,PATCH,POST,DELETE',
   credentials: true, // Allow credentials if needed
 }));
