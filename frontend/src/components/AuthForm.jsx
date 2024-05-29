@@ -12,7 +12,7 @@ const AuthForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const endpoint = isRegister ? 'http://localhost:5000/api/auth/register' : 'http://localhost:5000/api/auth/login';
+    const endpoint = isRegister ? 'https://todo-epzc3zpds-sachin76niths-projects.vercel.app/api/auth/register' : 'https://todo-epzc3zpds-sachin76niths-projects.vercel.app/api/auth/login';
     const payload = isRegister ? { username, email, password } : { email, password };
 
     try {
