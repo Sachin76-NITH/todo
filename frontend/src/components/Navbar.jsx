@@ -10,7 +10,7 @@ function Navbar() {
 
   return (
     <nav className={`navbar ${showMenu ? 'active' : ''}`}>
-      <div className="logo">RISE 11</div>
+      <div className="logo">MAGMA LIST</div>
       <div className={`menu-toggle ${showMenu ? 'active' : ''}`} onClick={toggleMenu}>
         <div className="bar"></div>
         <div className="bar"></div>
@@ -20,7 +20,7 @@ function Navbar() {
         <li><a href="/">Home</a></li>
         {/* <li><a href="#">Find a Guide</a></li>
         <li><a href="/register"></a></li> */}
-        <li><a href="/todo">To Do</a></li>
+        <li><a href="/todo">Todo</a></li>
         <li><a href="/logout">Logout</a></li>
       </ul>
     </nav>
